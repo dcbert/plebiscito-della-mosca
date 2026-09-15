@@ -8,6 +8,7 @@ import { majority, SEAT_WING, THRESHOLDS, WING_POLICY, mixRates, personality, ve
 import type { Wing } from "./engine/types";
 
 const N_SEATS = 8;
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
 const RUN_MS = 400;
 const ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"];
 const BUCKET_IT: Record<Bucket, string> = {
@@ -757,7 +758,10 @@ function renderMethods(): void {
 async function boot(): Promise<void> {
   $("status").textContent = "Scarico pack e voti…";
   const q = parseQuery();
-  const loaded = await loadPackAndManifest("/packs/circuit.pack.bin.gz", "/packs/circuit.manifest.json");
+  const loaded = await loadPackAndManifest(
+    asset("packs/circuit.pack.bin.gz"),
+    asset("packs/circuit.manifest.json"),
+  );
   manifest = loaded.manifest;
   packBuf = loaded.buffer;
   labels = new Map(manifest.neurons.map((n) => [n.rootId, n.cellType || n.cellClass || n.rootId]));
@@ -789,7 +793,7 @@ async function boot(): Promise<void> {
     worker.postMessage({ type: "init", pack: copy }, [copy]);
   });
 
-  const fr = await fetch("/sessions.json");
+  const fr = await fetch(asset("sessions.json"));
   feed = (await fr.json()) as Feed;
   fillSessions();
   session = feed.sessions.find((s) => s.id === q.s) || feed.sessions[0];
