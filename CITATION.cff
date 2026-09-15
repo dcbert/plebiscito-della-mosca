@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+title: "Il Plebiscito della Mosca"
+message: >-
+  If you use this software, please cite it — and cite BANC
+  (Bates et al., Nature 2026) and the Shiu et al. 2024 LIF
+  constants if you use the circuit pack or the simulator.
+type: software
+authors:
+  - family-names: Bert
+    given-names: Davide
+license: MIT
+repository-code: https://github.com/dcbert/plebiscito-della-mosca
+url: https://dcbert.github.io/plebiscito-della-mosca/
+abstract: >-
+  Satirical web app: a real BANC v888 fruit-fly circuit votes
+  on Italian XIX-legislatura motions. The fly never reads the
+  bill. We classify the text; the connectome answers the stimulus.
+keywords:
+  - Drosophila
+  - connectome
+  - BANC
+  - leaky integrate-and-fire
+  - Italian Parliament
+  - satire
+preferred-citation:
+  type: article
+  title: Distributed control circuits across a brain-and-cord connectome
+  authors:
+    - family-names: Bates
+      given-names: Alexander S.
+    - family-names: Phelps
+      given-names: Jasper S.
+    - family-names: Kim
+      given-names: Minsu
+    - family-names: Yang
+      given-names: Helen H.
+    - name: "et al."
+  year: 2026
+  journal: Nature
+  doi: 10.1038/s41586-026-10735-w

@@ -1,0 +1,35 @@
+{
+  "name": "plebiscito-della-mosca",
+  "private": true,
+  "version": "0.1.0",
+  "description": "The Italian Parliament has no connectome. The fruit fly does. Satire with a real BANC v888 circuit.",
+  "license": "MIT",
+  "author": "Davide Bert",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcbert/plebiscito-della-mosca.git"
+  },
+  "homepage": "https://dcbert.github.io/plebiscito-della-mosca/",
+  "bugs": {
+    "url": "https://github.com/dcbert/plebiscito-della-mosca/issues"
+  },
+  "keywords": [
+    "drosophila",
+    "connectome",
+    "BANC",
+    "parliament",
+    "satire",
+    "LIF"
+  ],
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vite": "^6.2.0"
+  }
+}

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f3ead8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Plebiscito" />
+    <title>IL PLEBISCITO DELLA MOSCA</title>
+    <meta name="description" content="Il Parlamento non ha un connectome. La mosca sì. Classifichiamo il testo; il connectome risponde allo stimolo." />
+    <meta property="og:title" content="Il Plebiscito della Mosca" />
+    <meta property="og:description" content="Il Parlamento non ha un connectome. La mosca sì." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Il Plebiscito della Mosca" />
+    <meta name="twitter:description" content="Il Parlamento non ha un connectome. La mosca sì." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body data-tab="sciame">
+    <div id="boot-bar" class="boot-bar" aria-hidden="true"></div>
+    <div id="stamp-notbanc" hidden>NOT BANC</div>
+
+    <header class="masthead">
+      <div class="mast-row">
+        <p class="seal" aria-hidden="true">🪰</p>
+        <div class="mast-titles">
+          <p class="kicker">Seduta satira · XIX</p>
+          <h1>IL PLEBISCITO DELLA MOSCA</h1>
+          <p class="sub">Il Parlamento non ha un connectome. La mosca sì.</p>
+        </div>
+        <button id="open-info" type="button" class="mast-info">Metodi</button>
+      </div>
+      <p class="core">
+        La mosca non ha letto il testo. Abbiamo classificato il testo noi. Il connectome ha risposto allo stimolo.
+      </p>
+    </header>
+
+    <div class="app">
+      <main class="spread">
+        <section class="pane-vote chamber" aria-label="Seduta">
+          <div class="vote-main">
+            <div class="picker-row">
+              <button id="prev-s" type="button" class="icon-btn" aria-label="Seduta precedente">‹</button>
+              <label class="picker">
+                Seduta
+                <select id="session"></select>
+              </label>
+              <button id="next-s" type="button" class="icon-btn" aria-label="Seduta successiva">›</button>
+            </div>
+
+            <div id="meta-chips" class="chips"></div>
+            <p id="archivio" class="archivio" hidden>ARCHIVIO</p>
+            <h2 id="domanda"></h2>
+            <p id="official-title" class="official-title"></p>
+            <p id="bucket-line" class="bucket-line"></p>
+
+            <div class="results">
+              <div class="result-card" id="official-card">
+                <h3>Ufficiale</h3>
+                <p id="official-branch" class="where"></p>
+                <p id="official-verdict" class="giant">—</p>
+                <p id="official-counts" class="counts"></p>
+              </div>
+              <div class="vs" aria-hidden="true">vs</div>
+              <div class="result-card sciame" id="sciame-card">
+                <h3>Sciame</h3>
+                <p class="where">3 sinistra · 2 centro · 3 destra</p>
+                <p id="sciame-verdict" class="giant">—</p>
+                <p id="sciame-copy" class="copy"></p>
+                <p id="sciame-counts" class="counts"></p>
+              </div>
+            </div>
+
+            <table class="ballot" id="ballot" aria-label="Confronto SI NO AST">
+              <thead>
+                <tr><th></th><th>Ufficiale</th><th>Sciame</th></tr>
+              </thead>
+              <tbody>
+                <tr><th>SI</th><td id="b-off-si">—</td><td id="b-sci-si">—</td></tr>
+                <tr><th>NO</th><td id="b-off-no">—</td><td id="b-sci-no">—</td></tr>
+                <tr><th>AST</th><td id="b-off-ast">—</td><td id="b-sci-ast">—</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="dock" role="region" aria-label="Comandi">
+            <div class="hz-block">
+              <label for="hz">Stimolo</label>
+              <div class="hz-row">
+                <input id="hz-range" type="range" min="0" max="250" step="10" value="150" />
+                <input id="hz" type="number" min="0" max="400" step="10" value="150" inputmode="numeric" />
+                <span class="unit">Hz</span>
+              </div>
+            </div>
+            <div class="dock-actions">
+              <button id="run" type="button" class="primary">Run</button>
+              <button id="pause" type="button">Pausa</button>
+              <button id="reset" type="button">Reset</button>
+            </div>
+            <div id="progress" class="progress" hidden>
+              <div id="progress-bar"></div>
+            </div>
+            <p id="status" class="status">Caricamento del pack…</p>
+          </div>
+          <footer id="footer" class="colophon"></footer>
+        </section>
+
+        <section class="pane-swarm hemicycle" data-panel="sciame" aria-label="Hemiciclo delle mosche">
+          <h2>Hemiciclo</h2>
+          <p class="hint desktop-only">
+            Stesso grafo BANC. I banchi sono tabelle arbitrarie, non idee della mosca.
+          </p>
+          <div class="hemicycle-bowl">
+            <div class="wings">
+              <div class="wing sinistra">
+                <h3>Sinistra</h3>
+                <p class="wing-blurb">allarme → NO</p>
+                <div id="seats-left" class="bench"></div>
+              </div>
+              <div class="wing centro">
+                <h3>Centro</h3>
+                <p class="wing-blurb">soglia alta · AST</p>
+                <div id="seats-center" class="bench"></div>
+              </div>
+              <div class="wing destra">
+                <h3>Destra</h3>
+                <p class="wing-blurb">allarme → SI</p>
+                <div id="seats-right" class="bench"></div>
+              </div>
+            </div>
+            <p class="rostrum" aria-hidden="true">🪰 tribuna</p>
+          </div>
+          <p id="sciame-tally" class="tally"></p>
+          <div class="legend" aria-hidden="true">
+            <span class="lg si">SI</span>
+            <span class="lg no">NO</span>
+            <span class="lg ast">AST</span>
+          </div>
+          <aside id="seat-detail" class="seat-detail" hidden></aside>
+        </section>
+
+        <section class="pane-brain lab" data-panel="cervello" aria-label="Connectome">
+          <div class="cloud-stage">
+            <canvas id="cloud" width="900" height="420"></canvas>
+            <div class="cloud-ui">
+              <p id="cloud-cap">BANC v888 · punti = somi misurati · trascina per orbitare</p>
+              <button id="cloud-replay" type="button">Replay spike</button>
+            </div>
+            <div class="cloud-legend" aria-hidden="true">
+              <span class="cl sensory">senso / visivo</span>
+              <span class="cl dn">discendenti</span>
+              <span class="cl mn">motori</span>
+            </div>
+          </div>
+          <div class="lab-extra" data-panel="dati">
+            <h3>Motoneuroni · baseline vs stimolo</h3>
+            <div id="motor-bars" class="bars"></div>
+            <p class="cap">
+              Baseline = 0 Hz. Delta Hz arbitrario. Non è camminare, non è volare.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <nav class="tabs" aria-label="Viste">
+        <button type="button" class="is-on" data-tab="sciame">Sciame</button>
+        <button type="button" data-tab="cervello">Cervello</button>
+        <button type="button" data-tab="dati">Dati</button>
+      </nav>
+    </div>
+
+    <dialog id="info" class="info">
+      <form method="dialog" class="info-head">
+        <div class="info-titles">
+          <p class="kicker">Avvertenza · XIX</p>
+          <h2>Metodi</h2>
+        </div>
+        <button type="submit" class="icon-btn" aria-label="Chiudi">×</button>
+      </form>
+      <div class="info-body">
+        <ol class="tesi">
+          <li>
+            <div>
+              <strong>La mosca non legge.</strong>
+              Classifichiamo il testo noi, con un elenco chiuso di parole. Nessun modello sul SI/NO. Fuori lista → nessuno stimolo.
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Stesso grafo, tre banchi.</strong>
+              Un seme a ogni Run. Tendenza, non copione: Hz, soglia, segno e quali motori ascoltare. Circa un quarto ribelle.
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>Grafo zitto → ASTENUTA.</strong>
+              Non inventiamo un canale. Lo sciame è maggioranza di 8; pareggio SI/NO → ASTENUTA.
+            </div>
+          </li>
+        </ol>
+
+        <section class="meth-block">
+          <h3>Export</h3>
+          <div class="export-row">
+            <button id="card-story" type="button">PNG 9:16</button>
+            <button id="card-sq" type="button">PNG 1:1</button>
+            <button id="export-json" type="button">JSON</button>
+            <button id="share" type="button" class="primary">Condividi</button>
+          </div>
+          <p class="cap">Su iPhone, Condividi apre il foglio di sistema. L’URL tiene seduta, Hz e seme.</p>
+        </section>
+
+        <div id="methods" class="methods"></div>
+      </div>
+    </dialog>
+
+    <div id="toast" class="toast" hidden role="status"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

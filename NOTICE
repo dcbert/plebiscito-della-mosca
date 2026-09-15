@@ -1,0 +1,30 @@
+Il Plebiscito della Mosca
+Copyright (c) 2026 Davide Bert
+
+This repository is satire. It is not affiliated with, endorsed by, or
+representative of BANC, FlyWire, the Camera dei deputati, the Senato della
+Repubblica, Openpolis, or any political party.
+
+Third-party data (not covered by the MIT license of this software):
+
+1. BANC v888 connectome
+   Bates, Phelps, Kim, Yang et al., Nature 2026.
+   Paper: https://doi.org/10.1038/s41586-026-10735-w
+   Data:  https://doi.org/10.7910/DVN/7WTH1N  (CC BY 4.0)
+   Compiled feathers: GCS bucket lee-lab_brain-and-nerve-cord-fly-connectome
+   This repo ships a derived, compressed circuit cut (~2.8k neurons). Cite BANC
+   if you use the pack or rebuild it.
+
+2. LIF constants
+   Shiu et al., Nature 2024 (FAFB Drosophila brain model defaults).
+   Inspected precedent: https://github.com/philshiu/Drosophila_brain_model
+   Applying those constants to a BANC edgelist is not a validated BANC
+   physiological model.
+
+3. Parliamentary votes
+   Openpolis Open Parlamento API (attribution required).
+   Camera / Senato open data (CC BY).
+   Counts are copied, never invented. Pontida is not a parliamentary vote.
+
+The arbitrary Δrate table that turns motor firing into SI / NO / ASTENUTA is
+a joke with units. It is not walking, flying, government, or endorsement.

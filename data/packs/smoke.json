@@ -1,0 +1,42 @@
+{
+  "escape": {
+    "status": "ok",
+    "stimN": 60,
+    "readoutN": 22,
+    "meanReadoutHz": 15.909,
+    "meanAllHz": 4.437,
+    "maxHz": 230.0
+  },
+  "sugar": {
+    "status": "ok",
+    "stimN": 40,
+    "readoutN": 38,
+    "meanReadoutHz": 0.921,
+    "meanAllHz": 2.445,
+    "maxHz": 187.5
+  },
+  "bitter": {
+    "status": "silent_readout",
+    "stimN": 24,
+    "readoutN": 38,
+    "meanReadoutHz": 0.0,
+    "meanAllHz": 1.234,
+    "maxHz": 172.5
+  },
+  "fermentation": {
+    "status": "silent_readout",
+    "stimN": 36,
+    "readoutN": 38,
+    "meanReadoutHz": 0.0,
+    "meanAllHz": 3.077,
+    "maxHz": 210.0
+  },
+  "mechano": {
+    "status": "ok",
+    "stimN": 28,
+    "readoutN": 22,
+    "meanReadoutHz": 8.068,
+    "meanAllHz": 2.038,
+    "maxHz": 187.5
+  }
+}

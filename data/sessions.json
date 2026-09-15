@@ -1,0 +1,725 @@
+{
+  "legislature": "XIX",
+  "generatedAt": "2026-09-15T16:12:20.230844+00:00",
+  "attribution": "Voti: Openpolis Openparlamento. Risoluzione Strade Sicure: Camera, non votata in Aula.",
+  "sessions": [
+    {
+      "id": "strade-sicure-7-00342",
+      "pin": true,
+      "archivio": true,
+      "domanda": "Più militari nelle strade?",
+      "bucket": "escape",
+      "title": "Risoluzione 7-00342 Zoffili: rafforzare l'operazione Strade Sicure fino a 10.000 militari",
+      "description": "Risoluzione presentata alla Camera, illustrata in Commissione Difesa il 21 gennaio 2026. Non risulta una votazione elettronica d'Aula al momento del congelamento.",
+      "date": "2026-01-21",
+      "branch": "camera",
+      "source": {
+        "kind": "camera_risoluzione",
+        "ids": [
+          "7-00342"
+        ],
+        "attribution": "Camera dei deputati (risoluzione); rassegna stampa 2026-09. Non è una votazione d'Aula."
+      },
+      "official": {
+        "fav": null,
+        "contr": null,
+        "ast": null,
+        "esito": "non_votata_in_aula"
+      },
+      "flags": {
+        "is_key_vote": false,
+        "is_final": false,
+        "is_confidence": false
+      },
+      "stimulusHz": 150,
+      "neuronIds": [
+        "720575941437855264",
+        "720575941552904510",
+        "720575941633116869",
+        "720575941558697710",
+        "720575941552969555",
+        "720575941505088023",
+        "720575941510443986",
+        "720575941538785256",
+        "720575941441490005",
+        "720575941520627416",
+        "720575941402905891",
+        "720575941472017472",
+        "720575941505593431",
+        "720575941481861373",
+        "720575941416709404",
+        "720575941491549872",
+        "720575941494003070",
+        "720575941518177964",
+        "720575941513911043",
+        "720575941456386611",
+        "720575941450259549",
+        "720575941483963331",
+        "720575941515491793",
+        "720575941439031871",
+        "720575941477752385",
+        "720575941688896475",
+        "720575941439941839",
+        "720575941437649471",
+        "720575941409925167",
+        "720575941578507253",
+        "720575941484892157",
+        "720575941704879322",
+        "720575941454999533",
+        "720575941669991155",
+        "720575941489678389",
+        "720575941652023317",
+        "720575941575610201",
+        "720575941434264590",
+        "720575941482952445",
+        "720575941590932008",
+        "720575941437536556",
+        "720575941594331944",
+        "720575941668955123",
+        "720575941479473002",
+        "720575941451488093",
+        "720575941625599643",
+        "720575941501432811",
+        "720575941633427180",
+        "720575941528202777",
+        "720575941575071560",
+        "720575941682468541",
+        "720575941527347737",
+        "720575941632190434",
+        "720575941566022144",
+        "720575941406912430",
+        "720575941418389788",
+        "720575941624270956",
+        "720575941581069137",
+        "720575941732098859",
+        "720575941537282753"
+      ],
+      "motorIds": [
+        "720575941509145950",
+        "720575941611791590",
+        "720575941409519022",
+        "720575941559874831",
+        "720575941583264121",
+        "720575941451068597",
+        "720575941507073303",
+        "720575941657879576",
+        "720575941500579913",
+        "720575941476434996",
+        "720575941487139138",
+        "720575941590220684",
+        "720575941463144336",
+        "720575941596050112",
+        "720575941542328837",
+        "720575941645403000",
+        "720575941640465439",
+        "720575941519783640",
+        "720575941566847847",
+        "720575941560383347",
+        "720575941573368719",
+        "720575941533190337"
+      ],
+      "banc": {
+        "materialization": 888,
+        "edgelist": "simple_v3",
+        "pack": "circuit",
+        "notBanc": false
+      },
+      "thresholds": {
+        "escape_no_hz": 8,
+        "sugar_si_hz": 8,
+        "bitter_no_hz": -5,
+        "fermentation_si_hz": 8,
+        "mechano_si_hz": 8,
+        "note": "Arbitrary Δrate table. Shown in the UI. Not physiology."
+      }
+    },
+    {
+      "id": "fiducia-dl-sicurezza-2026",
+      "pin": true,
+      "archivio": false,
+      "domanda": "Fiducia sul decreto sicurezza?",
+      "bucket": "escape",
+      "title": "Fiducia conversione decreto sicurezza 2026",
+      "description": "Ddl n. 2886 Votazione questione di fiducia",
+      "date": "2026-04-22",
+      "branch": "camera",
+      "source": {
+        "kind": "openpolis",
+        "ids": [
+          "vs19_648_123"
+        ],
+        "url": "https://service.opdm.openpolis.io/api-openparlamento/v1/19/votings/vs19_648_123/",
+        "attribution": "Openpolis Openparlamento, XIX legislatura"
+      },
+      "official": {
+        "fav": 203,
+        "contr": 117,
+        "ast": 3,
+        "esito": "Approvata",
+        "presenti": 323,
+        "votanti": 320
+      },
+      "flags": {
+        "is_key_vote": true,
+        "is_final": false,
+        "is_confidence": true,
+        "sub_vote_type": "Atto intero"
+      },
+      "stimulusHz": 150,
+      "neuronIds": [
+        "720575941437855264",
+        "720575941552904510",
+        "720575941633116869",
+        "720575941558697710",
+        "720575941552969555",
+        "720575941505088023",
+        "720575941510443986",
+        "720575941538785256",
+        "720575941441490005",
+        "720575941520627416",
+        "720575941402905891",
+        "720575941472017472",
+        "720575941505593431",
+        "720575941481861373",
+        "720575941416709404",
+        "720575941491549872",
+        "720575941494003070",
+        "720575941518177964",
+        "720575941513911043",
+        "720575941456386611",
+        "720575941450259549",
+        "720575941483963331",
+        "720575941515491793",
+        "720575941439031871",
+        "720575941477752385",
+        "720575941688896475",
+        "720575941439941839",
+        "720575941437649471",
+        "720575941409925167",
+        "720575941578507253",
+        "720575941484892157",
+        "720575941704879322",
+        "720575941454999533",
+        "720575941669991155",
+        "720575941489678389",
+        "720575941652023317",
+        "720575941575610201",
+        "720575941434264590",
+        "720575941482952445",
+        "720575941590932008",
+        "720575941437536556",
+        "720575941594331944",
+        "720575941668955123",
+        "720575941479473002",
+        "720575941451488093",
+        "720575941625599643",
+        "720575941501432811",
+        "720575941633427180",
+        "720575941528202777",
+        "720575941575071560",
+        "720575941682468541",
+        "720575941527347737",
+        "720575941632190434",
+        "720575941566022144",
+        "720575941406912430",
+        "720575941418389788",
+        "720575941624270956",
+        "720575941581069137",
+        "720575941732098859",
+        "720575941537282753"
+      ],
+      "motorIds": [
+        "720575941509145950",
+        "720575941611791590",
+        "720575941409519022",
+        "720575941559874831",
+        "720575941583264121",
+        "720575941451068597",
+        "720575941507073303",
+        "720575941657879576",
+        "720575941500579913",
+        "720575941476434996",
+        "720575941487139138",
+        "720575941590220684",
+        "720575941463144336",
+        "720575941596050112",
+        "720575941542328837",
+        "720575941645403000",
+        "720575941640465439",
+        "720575941519783640",
+        "720575941566847847",
+        "720575941560383347",
+        "720575941573368719",
+        "720575941533190337"
+      ],
+      "banc": {
+        "materialization": 888,
+        "edgelist": "simple_v3",
+        "pack": "circuit",
+        "notBanc": false
+      },
+      "thresholds": {
+        "escape_no_hz": 8,
+        "sugar_si_hz": 8,
+        "bitter_no_hz": -5,
+        "fermentation_si_hz": 8,
+        "mechano_si_hz": 8,
+        "note": "Arbitrary Δrate table. Shown in the UI. Not physiology."
+      }
+    },
+    {
+      "id": "ponte-stretto-2023",
+      "pin": true,
+      "archivio": false,
+      "domanda": "Si costruisce il ponte sullo Stretto?",
+      "bucket": "mechano",
+      "title": "Conversione decreto ponte sullo stretto",
+      "description": "d-l 35/2023 - Ponte sullo stretto di Messina",
+      "date": "2023-05-24",
+      "branch": "senato",
+      "source": {
+        "kind": "openpolis",
+        "ids": [
+          "19-71-141"
+        ],
+        "url": "https://service.opdm.openpolis.io/api-openparlamento/v1/19/votings/19-71-141/",
+        "attribution": "Openpolis Openparlamento, XIX legislatura"
+      },
+      "official": {
+        "fav": 103,
+        "contr": 49,
+        "ast": 3,
+        "esito": "Approvata",
+        "presenti": 156,
+        "votanti": 155
+      },
+      "flags": {
+        "is_key_vote": true,
+        "is_final": true,
+        "is_confidence": false,
+        "sub_vote_type": "Atto intero"
+      },
+      "stimulusHz": 150,
+      "neuronIds": [
+        "720575941534721729",
+        "720575941668827825",
+        "720575941427920632",
+        "720575941610928870",
+        "720575941688239478",
+        "720575941639363871",
+        "720575941543603997",
+        "720575941531876811",
+        "720575941510545936",
+        "720575941612052141",
+        "720575941632325346",
+        "720575941671264433",
+        "720575941578764633",
+        "720575941565337959",
+        "720575941440730687",
+        "720575941690722523",
+        "720575941480979424",
+        "720575941523332855",
+        "720575941546446853",
+        "720575941464999181",
+        "720575941519987383",
+        "720575941691652504",
+        "720575941439718444",
+        "720575941476138292",
+        "720575941461969619",
+        "720575941555097479",
+        "720575941439213909",
+        "720575941472190987"
+      ],
+      "motorIds": [
+        "720575941509145950",
+        "720575941611791590",
+        "720575941409519022",
+        "720575941559874831",
+        "720575941500579913",
+        "720575941476434996",
+        "720575941431976718",
+        "720575941503422187",
+        "720575941448798133",
+        "720575941561204626",
+        "720575941611945389",
+        "720575941483728326",
+        "720575941513362252",
+        "720575941501934423",
+        "720575941496173947",
+        "720575941511197516",
+        "720575941692129243",
+        "720575941486583046",
+        "720575941524748877",
+        "720575941612256476",
+        "720575941594091397",
+        "720575941443907754"
+      ],
+      "banc": {
+        "materialization": 888,
+        "edgelist": "simple_v3",
+        "pack": "circuit",
+        "notBanc": false
+      },
+      "thresholds": {
+        "escape_no_hz": 8,
+        "sugar_si_hz": 8,
+        "bitter_no_hz": -5,
+        "fermentation_si_hz": 8,
+        "mechano_si_hz": 8,
+        "note": "Arbitrary Δrate table. Shown in the UI. Not physiology."
+      }
+    },
+    {
+      "id": "decreto-irpef-2025",
+      "pin": true,
+      "archivio": false,
+      "domanda": "Si converte il decreto Irpef?",
+      "bucket": "none",
+      "title": "Conversione decreto Irpef",
+      "description": "DDL 2448 - VOTO FINALE",
+      "date": "2025-06-17",
+      "branch": "camera",
+      "source": {
+        "kind": "openpolis",
+        "ids": [
+          "vs19_495_008"
+        ],
+        "url": "https://service.opdm.openpolis.io/api-openparlamento/v1/19/votings/vs19_495_008/",
+        "attribution": "Openpolis Openparlamento, XIX legislatura"
+      },
+      "official": {
+        "fav": 153,
+        "contr": 0,
+        "ast": 101,
+        "esito": "Approvata",
+        "presenti": 254,
+        "votanti": 153
+      },
+      "flags": {
+        "is_key_vote": false,
+        "is_final": true,
+        "is_confidence": false,
+        "sub_vote_type": "Atto intero"
+      },
+      "stimulusHz": 0,
+      "neuronIds": [],
+      "motorIds": [],
+      "banc": {
+        "materialization": 888,
+        "edgelist": "simple_v3",
+        "pack": "circuit",
+        "notBanc": false
+      },
+      "thresholds": {
+        "escape_no_hz": 8,
+        "sugar_si_hz": 8,
+        "bitter_no_hz": -5,
+        "fermentation_si_hz": 8,
+        "mechano_si_hz": 8,
+        "note": "Arbitrary Δrate table. Shown in the UI. Not physiology."
+      }
+    },
+    {
+      "id": "delega-nucleare-2026",
+      "pin": true,
+      "archivio": false,
+      "domanda": "Delega al governo sull'energia nucleare?",
+      "bucket": "none",
+      "title": "Delega al Governo in materia di energia nucleare sostenibile",
+      "description": "DDL 2669-A E ABB - VOTO FINALE",
+      "date": "2026-06-04",
+      "branch": "camera",
+      "source": {
+        "kind": "openpolis",
+        "ids": [
+          "vs19_669_001"
+        ],
+        "url": "https://service.opdm.openpolis.io/api-openparlamento/v1/19/votings/vs19_669_001/",
+        "attribution": "Openpolis Openparlamento, XIX legislatura"
+      },
+      "official": {
+        "fav": 155,
+        "contr": 86,
+        "ast": 8,
+        "esito": "Approvata",
+        "presenti": 249,
+        "votanti": 241
+      },
+      "flags": {
+        "is_key_vote": true,
+        "is_final": true,
+        "is_confidence": false,
+        "sub_vote_type": "Atto intero"
+      },
+      "stimulusHz": 0,
+      "neuronIds": [],
+      "motorIds": [],
+      "banc": {
+        "materialization": 888,
+        "edgelist": "simple_v3",
+        "pack": "circuit",
+        "notBanc": false
+      },
+      "thresholds": {
+        "escape_no_hz": 8,
+        "sugar_si_hz": 8,
+        "bitter_no_hz": -5,
+        "fermentation_si_hz": 8,
+        "mechano_si_hz": 8,
+        "note": "Arbitrary Δrate table. Shown in the UI. Not physiology."
+      }
+    },
+    {
+      "id": "fiducia-dl-infrastrutture-pnrr",
+      "pin": true,
+      "archivio": false,
+      "domanda": "Fiducia sul decreto infrastrutture e Pnrr?",
+      "bucket": "mechano",
+      "title": "Fiducia conversione decreto infrastrutture e Pnrr",
+      "description": "Disegno di legge n. 2001. Votazione questione di fiducia",
+      "date": "2026-08-05",
+      "branch": "senato",
+      "source": {
+        "kind": "openpolis",
+        "ids": [
+          "19-447-1"
+        ],
+        "url": "https://service.opdm.openpolis.io/api-openparlamento/v1/19/votings/19-447-1/",
+        "attribution": "Openpolis Openparlamento, XIX legislatura"
+      },
+      "official": {
+        "fav": 104,
+        "contr": 62,
+        "ast": 1,
+        "esito": "Approvata",
+        "presenti": 167,
+        "votanti": 167
+      },
+      "flags": {
+        "is_key_vote": true,
+        "is_final": false,
+        "is_confidence": true,
+        "sub_vote_type": "Atto intero"
+      },
+      "stimulusHz": 150,
+      "neuronIds": [
+        "720575941534721729",
+        "720575941668827825",
+        "720575941427920632",
+        "720575941610928870",
+        "720575941688239478",
+        "720575941639363871",
+        "720575941543603997",
+        "720575941531876811",
+        "720575941510545936",
+        "720575941612052141",
+        "720575941632325346",
+        "720575941671264433",
+        "720575941578764633",
+        "720575941565337959",
+        "720575941440730687",
+        "720575941690722523",
+        "720575941480979424",
+        "720575941523332855",
+        "720575941546446853",
+        "720575941464999181",
+        "720575941519987383",
+        "720575941691652504",
+        "720575941439718444",
+        "720575941476138292",
+        "720575941461969619",
+        "720575941555097479",
+        "720575941439213909",
+        "720575941472190987"
+      ],
+      "motorIds": [
+        "720575941509145950",
+        "720575941611791590",
+        "720575941409519022",
+        "720575941559874831",
+        "720575941500579913",
+        "720575941476434996",
+        "720575941431976718",
+        "720575941503422187",
+        "720575941448798133",
+        "720575941561204626",
+        "720575941611945389",
+        "720575941483728326",
+        "720575941513362252",
+        "720575941501934423",
+        "720575941496173947",
+        "720575941511197516",
+        "720575941692129243",
+        "720575941486583046",
+        "720575941524748877",
+        "720575941612256476",
+        "720575941594091397",
+        "720575941443907754"
+      ],
+      "banc": {
+        "materialization": 888,
+        "edgelist": "simple_v3",
+        "pack": "circuit",
+        "notBanc": false
+      },
+      "thresholds": {
+        "escape_no_hz": 8,
+        "sugar_si_hz": 8,
+        "bitter_no_hz": -5,
+        "fermentation_si_hz": 8,
+        "mechano_si_hz": 8,
+        "note": "Arbitrary Δrate table. Shown in the UI. Not physiology."
+      }
+    },
+    {
+      "id": "procedurale-legge-elettorale-em",
+      "pin": true,
+      "archivio": false,
+      "domanda": "Si approva l'emendamento 1.202 alla legge elettorale?",
+      "bucket": "none",
+      "title": "Disposizioni in materia di elezioni della Camera dei deputati e del Senato della Repubblica - Em. 1.202, La Marca e altri",
+      "description": "Disposizioni in materia di elezioni della Camera dei deputati e del Senato della Repubblica",
+      "date": "2026-09-14",
+      "branch": "senato",
+      "source": {
+        "kind": "openpolis",
+        "ids": [
+          "19-453-2"
+        ],
+        "url": "https://service.opdm.openpolis.io/api-openparlamento/v1/19/votings/19-453-2/",
+        "attribution": "Openpolis Openparlamento, XIX legislatura"
+      },
+      "official": {
+        "fav": 54,
+        "contr": 93,
+        "ast": 2,
+        "esito": "Respinta",
+        "presenti": 159,
+        "votanti": 149
+      },
+      "flags": {
+        "is_key_vote": false,
+        "is_final": false,
+        "is_confidence": false,
+        "sub_vote_type": "Emendamenti"
+      },
+      "stimulusHz": 0,
+      "neuronIds": [],
+      "motorIds": [],
+      "banc": {
+        "materialization": 888,
+        "edgelist": "simple_v3",
+        "pack": "circuit",
+        "notBanc": false
+      },
+      "thresholds": {
+        "escape_no_hz": 8,
+        "sugar_si_hz": 8,
+        "bitter_no_hz": -5,
+        "fermentation_si_hz": 8,
+        "mechano_si_hz": 8,
+        "note": "Arbitrary Δrate table. Shown in the UI. Not physiology."
+      }
+    },
+    {
+      "id": "live-vs19_707_037",
+      "pin": false,
+      "archivio": false,
+      "domanda": "TU PDL 2360 E ABB-A - VOTO FINALE",
+      "bucket": "none",
+      "title": "Disposizioni in materia di cinema",
+      "description": "TU PDL 2360 E ABB-A - VOTO FINALE",
+      "date": "2026-09-10",
+      "branch": "camera",
+      "source": {
+        "kind": "openpolis",
+        "ids": [
+          "vs19_707_037"
+        ],
+        "url": "https://service.opdm.openpolis.io/api-openparlamento/v1/19/votings/vs19_707_037/",
+        "attribution": "Openpolis Openparlamento, XIX legislatura"
+      },
+      "official": {
+        "fav": 218,
+        "contr": 6,
+        "ast": 0,
+        "esito": "Approvata",
+        "presenti": 224,
+        "votanti": 224
+      },
+      "flags": {
+        "is_key_vote": false,
+        "is_final": true,
+        "is_confidence": false,
+        "sub_vote_type": "Atto intero"
+      },
+      "stimulusHz": 0,
+      "neuronIds": [],
+      "motorIds": [],
+      "banc": {
+        "materialization": 888,
+        "edgelist": "simple_v3",
+        "pack": "circuit",
+        "notBanc": false
+      },
+      "thresholds": {
+        "escape_no_hz": 8,
+        "sugar_si_hz": 8,
+        "bitter_no_hz": -5,
+        "fermentation_si_hz": 8,
+        "mechano_si_hz": 8,
+        "note": "Arbitrary Δrate table. Shown in the UI. Not physiology."
+      }
+    },
+    {
+      "id": "live-vs19_706_005",
+      "pin": false,
+      "archivio": false,
+      "domanda": "DDL 3043-A - VOTO FINALE",
+      "bucket": "none",
+      "title": "Conversione decreto crollo uffici giudiziari di Bolzano",
+      "description": "DDL 3043-A - VOTO FINALE",
+      "date": "2026-09-09",
+      "branch": "camera",
+      "source": {
+        "kind": "openpolis",
+        "ids": [
+          "vs19_706_005"
+        ],
+        "url": "https://service.opdm.openpolis.io/api-openparlamento/v1/19/votings/vs19_706_005/",
+        "attribution": "Openpolis Openparlamento, XIX legislatura"
+      },
+      "official": {
+        "fav": 255,
+        "contr": 0,
+        "ast": 0,
+        "esito": "Approvata",
+        "presenti": 255,
+        "votanti": 255
+      },
+      "flags": {
+        "is_key_vote": false,
+        "is_final": true,
+        "is_confidence": false,
+        "sub_vote_type": "Atto intero"
+      },
+      "stimulusHz": 0,
+      "neuronIds": [],
+      "motorIds": [],
+      "banc": {
+        "materialization": 888,
+        "edgelist": "simple_v3",
+        "pack": "circuit",
+        "notBanc": false
+      },
+      "thresholds": {
+        "escape_no_hz": 8,
+        "sugar_si_hz": 8,
+        "bitter_no_hz": -5,
+        "fermentation_si_hz": 8,
+        "mechano_si_hz": 8,
+        "note": "Arbitrary Δrate table. Shown in the UI. Not physiology."
+      }
+    }
+  ]
+}
