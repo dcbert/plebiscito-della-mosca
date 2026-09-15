@@ -24,9 +24,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run build
-        env:
-          BASE: /plebiscito-della-mosca/
+      - run: npm run build -- --mode pages
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
